@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Hello world</p>
+    <div class="page-header">
+        <h1>Let's play rock paper scissors!</h1>
+    </div>
+    <div class="choices">
+        <div class="player">
+            <div class="player-header">
+                <p style="font-weight: bold; font-size: 24px;">You chose: </p>
+            </div>
+            <div class="player-choice">
+                <img class="rps-image" src="rps.png">
+            </div>
+            <div class="player-buttons">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+            </div>
+        </div>
+        <div class="computer">
+            <div class="computer-header">
+                <p style="font-weight: bold; font-size: 24px;">Computer chooses: </p>
+            </div>
+            <div class="computer-choice">
+                <img class="rps-image" src="rps.png">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
