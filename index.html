@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="page-header">
+    <div class="page-header" style="outline: 4px solid black">
         <h1>Let's play rock paper scissors!</h1>
+        <div class="outcome" style="min-width: 100px; min-height: 20px; background-color: gray; border-radius: 15px; outline: 2px solid black; padding-left: 10px; padding-right: 10px; font-size: 20px;">
+            Who will win, Man or Machine?
+        </div>
+        <div class="scores">
+            <p class="M" style="padding-left: 10px; padding-right: 10px; background-color: lightblue; text-align: center; border-radius: 15px; outline: 2px solid black;">Player: 0</p>
+            <p class="m" style="padding-left: 10px; padding-right: 10px; background-color: pink; text-align: center; border-radius: 15px; outline: 2px solid black;">Computer: 0</p>
+        </div>
     </div>
     <div class="choices">
-        <div class="player">
+        <div class="player" style="outline: 4px solid black">
             <div class="player-header">
-                <p style="font-weight: bold; font-size: 24px;">You chose: </p>
+                <p class="playChoice" style="font-weight: bold; font-size: 24px; background-color: gray; border-radius: 15px; outline: 2px solid black; padding-left: 10px; padding-right: 10px;">You chose: </p>
             </div>
             <div class="player-choice">
-                <img class="rps-image" src="rps.png">
+                <div class="rotate">
+                    <img class="rps-image" src="paper.gif" style="max-width: 150px;">
+                    <div class="bottom-choices">
+                        <img class="rps-image" src="rock.gif" style="max-width: 150px;">
+                        <img class="rps-image" src="scissors.gif" style="max-width: 200px;">
+                    </div>
+                </div>
             </div>
             <div class="player-buttons">
                 <button class="rock">Rock</button>
@@ -24,12 +38,18 @@
                 <button class="scissors">Scissors</button>
             </div>
         </div>
-        <div class="computer">
+        <div class="computer" style="outline: 4px solid black">
             <div class="computer-header">
-                <p style="font-weight: bold; font-size: 24px;">Computer chooses: </p>
+                <p class="compChoice" style="font-weight: bold; font-size: 24px; background-color: gray; border-radius: 15px; outline: 2px solid black; padding-left: 10px; padding-right: 10px;">Computer chooses: </p>
             </div>
             <div class="computer-choice">
-                <img class="rps-image" src="rps.png">
+                <div class="rotate">
+                    <img class="rps-image" src="rock.gif" style="max-width: 150px;">
+                    <div class="bottom-choices">
+                        <img class="rps-image" src="paper.gif" style="max-width: 150px;">
+                        <img class="rps-image" src="scissors.gif" style="max-width: 200px;">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
